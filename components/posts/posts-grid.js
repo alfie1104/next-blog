@@ -3,10 +3,11 @@ import classes from "./posts-grid.module.css";
 
 function PostsGrid(props) {
   const { posts } = props;
+
   return (
-    <ul>
+    <ul className={classes.grid}>
       {posts.map((post) => (
-        <PostItem post={post} key={post.title} />
+        <PostItem post={post} key={post.slug} />
       ))}
     </ul>
   );

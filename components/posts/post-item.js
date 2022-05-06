@@ -11,11 +11,11 @@ function PostItem(props) {
   });
 
   const imagePath = `/images/posts/${slug}/${image}`;
-  const lingPath = `/posts/${slug}`;
+  const linkPath = `/posts/${slug}`;
 
   return (
     <li className={classes.post}>
-      <Link href={lingPath}>
+      <Link href={linkPath}>
         <a>
           <div className={classes.image}>
             <Image
